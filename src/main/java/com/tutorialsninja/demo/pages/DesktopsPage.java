@@ -97,7 +97,7 @@ public class DesktopsPage extends Utility {
     public WebElement clearText;
 
     @CacheLookup
-    @FindBy(xpath = "//body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]")
+    @FindBy(xpath = "//h4/a")
     WebElement productName;
 
     @CacheLookup

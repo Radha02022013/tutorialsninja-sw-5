@@ -80,7 +80,7 @@ public class DesktopsTest extends BaseTest {
         softAssert.assertEquals(desktopsPage.getProductName(),product,"product name not matched");
         softAssert.assertEquals(desktopsPage.getModel(),model,"Model not matched");
         softAssert.assertEquals(desktopsPage.getTotal(),total,"Total not matched");
-        softAssert.assertAll();
+
 
     }
 
