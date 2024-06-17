@@ -103,116 +103,116 @@ public class MyAccountsPage extends Utility {
 
     public void clickOnMyAccountLink() {
         Reporter.log("click On MyAccount Link " + myAccountLink);
-        CustomListeners.test.log(Status.PASS,"click on my account" + myAccountLink);
+        CustomListeners.test.log(Status.PASS, "click on my account" + myAccountLink);
         clickOnElement(myAccountLink);
 
     }
 
     public String getRegisterAccountMessage() {
         Reporter.log("getRegisterAccountMessage" + getRegisterAccountText.toString());
-        CustomListeners.test.log(Status.PASS,"get register account message" + getRegisterAccountText);
+        CustomListeners.test.log(Status.PASS, "get register account message" + getRegisterAccountText);
         return getTextFromElement(getRegisterAccountText);
     }
 
     public String getReturningCustomerMessage() {
         Reporter.log("getReturningCustomerMessage" + getReturningCustomerText.toString());
-        CustomListeners.test.log(Status.PASS,"get return customer message " + getReturningCustomerText);
+        CustomListeners.test.log(Status.PASS, "get return customer message " + getReturningCustomerText);
         return getTextFromElement(getReturningCustomerText);
     }
 
     public void enterFirstName(String name) {
         Reporter.log("Enter First Name " + name + " in field" + firstName.toString());
-        CustomListeners.test.log(Status.PASS,"enter first name" + firstName);
+        CustomListeners.test.log(Status.PASS, "enter first name" + firstName);
         sendTextToElement(firstName, name);
     }
 
     public void enterLastName(String lastname) {
         Reporter.log("Enter last Name " + lastname + " in field" + lastName.toString());
-        CustomListeners.test.log(Status.PASS,"enter last name " + lastName);
+        CustomListeners.test.log(Status.PASS, "enter last name " + lastName);
         sendTextToElement(lastName, lastname);
     }
 
     public void enterEmailId(String email) {
         Reporter.log("Enter " + email + " EmailId" + enterEmailId.toString());
-        CustomListeners.test.log(Status.PASS,"enter email id " + enterEmailId);
+        CustomListeners.test.log(Status.PASS, "enter email id " + enterEmailId);
         sendTextToElement(enterEmailId, email);
     }
 
     public void enterPhoneNumber(String phone) {
         Reporter.log("Enter " + phone + "Phone Number" + enterPhoneNumber.toString());
-        CustomListeners.test.log(Status.PASS,"enter phone no" + enterPhoneNumber);
+        CustomListeners.test.log(Status.PASS, "enter phone no" + enterPhoneNumber);
         sendTextToElement(enterPhoneNumber, phone);
     }
 
     public void enterPassword(String password) {
         Reporter.log("Enter Password " + password + " in password field" + enterPassword.toString());
-        CustomListeners.test.log(Status.PASS,"enter password" + enterPassword);
+        CustomListeners.test.log(Status.PASS, "enter password" + enterPassword);
         sendTextToElement(enterPassword, password);
     }
 
     public void enterConfirmPassword(String confirmPword) {
         Reporter.log("enter ConfirmPassword " + confirmPassword.toString());
-        CustomListeners.test.log(Status.PASS,"enter confirm password" + confirmPassword);
+        CustomListeners.test.log(Status.PASS, "enter confirm password" + confirmPassword);
         sendTextToElement(confirmPassword, confirmPword);
     }
 
     public void clickSubscribeOnYesRadioButton() {
         Reporter.log("clickSubscribeOnYesRadioButton " + subscribeYesRadioButton.toString());
-        CustomListeners.test.log(Status.PASS,"click subscribe on yes radio button" + subscribeYesRadioButton);
+        CustomListeners.test.log(Status.PASS, "click subscribe on yes radio button" + subscribeYesRadioButton);
         clickOnElement(subscribeYesRadioButton);
     }
 
     public void clickOnPrivacyPolicyCheckBox() {
         Reporter.log("clickOnPrivacyPolicyCheckBox" + privacyPolicyCheckBox.toString());
-        CustomListeners.test.log(Status.PASS,"click on privacy policy " + privacyPolicyCheckBox);
+        CustomListeners.test.log(Status.PASS, "click on privacy policy " + privacyPolicyCheckBox);
         clickOnElement(privacyPolicyCheckBox);
     }
 
     public void clickOnContinue1() {
         Reporter.log("clickOnContinue1" + clickOnContinueButton.toString());
-        CustomListeners.test.log(Status.PASS,"click on continue " + clickOnContinueButton);
+        CustomListeners.test.log(Status.PASS, "click on continue " + clickOnContinueButton);
         clickOnElement(clickOnContinueButton);
     }
 
     public String getAccountCreatedMessage() {
         Reporter.log("getAccountCreatedMessage" + getAccountCreatedText.toString());
-        CustomListeners.test.log(Status.PASS,"get account create message " + getAccountCreatedText);
+        CustomListeners.test.log(Status.PASS, "get account create message " + getAccountCreatedText);
         return getTextFromElement(getAccountCreatedText);
     }
 
     public void clickOnContinueButton2() {
         Reporter.log("clickOnContinueButton2" + continueButton2.toString());
-        CustomListeners.test.log(Status.PASS,"click on continue button 2 " + continueButton2);
+        CustomListeners.test.log(Status.PASS, "click on continue button 2 " + continueButton2);
         clickOnElement(continueButton2);
     }
 
     public void clickOnMyAccountTab() {
         Reporter.log("clickOnMyAccountTab" + myAccount2.toString());
-        CustomListeners.test.log(Status.PASS,"click on my account tab " + myAccount2);
+        CustomListeners.test.log(Status.PASS, "click on my account tab " + myAccount2);
         clickOnElement(myAccount2);
     }
 
     public String getAccountLogoutMessage() {
         Reporter.log("getAccountLogoutMessage" + getAccountLogoutText.toString());
-        CustomListeners.test.log(Status.PASS,"get account logout message " + getAccountLogoutText);
+        CustomListeners.test.log(Status.PASS, "get account logout message " + getAccountLogoutText);
         return getTextFromElement(getAccountLogoutText);
     }
 
     public void clickOnContinueButton3() {
         Reporter.log("click On Continue Button3" + continueButton3.toString());
-        CustomListeners.test.log(Status.PASS,"click on contnur button 3 " + continueButton3);
+        CustomListeners.test.log(Status.PASS, "click on contnur button 3 " + continueButton3);
         clickOnElement(continueButton3);
     }
 
     public void clickOnLogin() {
         Reporter.log("clickOnLogin" + loginButton.toString());
-        CustomListeners.test.log(Status.PASS,"click on login " + clickOnContinueButton);
+        CustomListeners.test.log(Status.PASS, "click on login " + clickOnContinueButton);
         clickOnElement(loginButton);
     }
 
     public String getMyAccountText() {
         Reporter.log("getMyAccountText" + getMyAccountText.toString());
-        CustomListeners.test.log(Status.PASS,"get my account text " + getMyAccountText);
+        CustomListeners.test.log(Status.PASS, "get my account text " + getMyAccountText);
         return getTextFromElement(getMyAccountText);
     }
 }

@@ -17,18 +17,19 @@ public class DesktopsTest extends BaseTest {
     SoftAssert softAssert;
 
     @BeforeMethod(alwaysRun = true)
-    public void inIt(){
+    public void inIt() {
         desktopsPage = new DesktopsPage();
         softAssert = new SoftAssert();
     }
-/*
- Write the following Test:
-1.Test name verifyProductArrangeInAlphaBaticalOrder()
-1.1 Mouse hover on Desktops Tab. and click
-1.2 Click on “Show All Desktops”
-1.3 Select Sort By position "Name: Z to A"
-1.4 Verify the Product will arrange in Descending order.
- */
+
+    /*
+     Write the following Test:
+    1.Test name verifyProductArrangeInAlphaBaticalOrder()
+    1.1 Mouse hover on Desktops Tab. and click
+    1.2 Click on “Show All Desktops”
+    1.3 Select Sort By position "Name: Z to A"
+    1.4 Verify the Product will arrange in Descending order.
+     */
     @Test(groups = {"sanity", "regression"})
     public void verifyProductsPriceDisplayHighToLowSuccessfully() {
         desktopsPage.clickOnCurrencyLink();
@@ -70,16 +71,16 @@ public class DesktopsTest extends BaseTest {
         desktopsPage.sortByPositionNameAtoZ("Name (A - Z)");
         desktopsPage.clickOnProduct(product);
         desktopsPage.clearTextFromTag(desktopsPage.clearText);
-        desktopsPage.sendTextToElement(desktopsPage.clearText,qty);
+        desktopsPage.sendTextToElement(desktopsPage.clearText, qty);
         desktopsPage.clickOnAdToCart();
         String expString = desktopsPage.getSuccessAlertMsg();
         String expString2 = expString.split("!")[0];
-        softAssert.assertEquals(expString, "Success: You have added " + product + " to your shopping cart!\n"+"×");
+        softAssert.assertEquals(expString, "Success: You have added " + product + " to your shopping cart!\n" + "×");
         desktopsPage.clickOnShoppingCart();
         Thread.sleep(2000);
-        softAssert.assertEquals(desktopsPage.getProductName(),product,"product name not matched");
-        softAssert.assertEquals(desktopsPage.getModel(),model,"Model not matched");
-        softAssert.assertEquals(desktopsPage.getTotal(),total,"Total not matched");
+        softAssert.assertEquals(desktopsPage.getProductName(), product, "product name not matched");
+        softAssert.assertEquals(desktopsPage.getModel(), model, "Model not matched");
+        softAssert.assertEquals(desktopsPage.getTotal(), total, "Total not matched");
 
 
     }

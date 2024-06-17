@@ -279,10 +279,10 @@ public class DesktopsPage extends Utility {
         Reporter.log("Click on " + product);
     }
 
-    public void clearTextFromTag(WebElement element){
+    public void clearTextFromTag(WebElement element) {
         clearText(element);
         // Reports and Log
-        CustomListeners.test.log(Status.PASS,"Clear on " + element);
+        CustomListeners.test.log(Status.PASS, "Clear on " + element);
         Reporter.log("Clear the text on " + element.toString());
     }
 
@@ -291,17 +291,19 @@ public class DesktopsPage extends Utility {
         CustomListeners.test.log(Status.PASS, "Get " + productName.toString());
         return getTextFromElement(productName);
     }
+
     public String getModel() {
-        CustomListeners.test.log(Status.PASS,"Get Model name " + model);
+        CustomListeners.test.log(Status.PASS, "Get Model name " + model);
         Reporter.log("Get Model name" + model.toString());
         return getTextFromElement(model);
     }
 
     public String getTotal() {
-        CustomListeners.test.log(Status.PASS,"Get total " + total);
+        CustomListeners.test.log(Status.PASS, "Get total " + total);
         Reporter.log("Get total" + total.toString());
         return getTextFromElement(total);
     }
+
     public String getSuccessAlertMsg() {
         Reporter.log("Get " + successAlertMsg.toString());
         CustomListeners.test.log(Status.PASS, "Get " + successAlertMsg);
